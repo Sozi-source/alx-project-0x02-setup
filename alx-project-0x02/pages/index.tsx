@@ -1,7 +1,7 @@
 const Home: React.FC =()=>{
   return(
     <div>
-      <h2>Welcome to Home Page</h2>
+      <h2>Landing Page</h2>
     </div>
   )
 }
