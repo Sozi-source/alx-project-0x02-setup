@@ -1,3 +1,5 @@
+import { type CardProps } from "@/interfaces";
+
 const Card: React.FC<CardProps> =({title, content})=>{
     return(
         <div className="bg-gray-300 border border-back shadow-md w-60 h-36 rounded-md flex-wrap p-3">

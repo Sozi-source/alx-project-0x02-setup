@@ -1,4 +1,4 @@
-interface projectProps{
-    name: string,
-    id: number,
+export type CardProps ={
+    title: string
+    content: string
 }
