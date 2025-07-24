@@ -1,8 +1,12 @@
+import React, {useState } from "react";
 import Card from "@/components/common/Card";
-import React from "react";
+import PostModal from "@/components/common/PostModal";
+import { formInput } from "@/interfaces";
 
 
-const cardData = [
+
+
+const initialPosts: formInput[] = [
   {
     title: "Healthy Living",
     content: "Adopt daily habits that support your body and mind."
@@ -56,9 +60,28 @@ const cardData = [
 
 
 const Home: React.FC =()=>{
+    const [cardData, setCardData] = useState<formInput[]>(initialPosts)
+
+    const [showModal, setShowModal] = useState(false)
+
+    const handleAddPost = (newPost: {title: string, content: string})=>{
+        setCardData([newPost, ...cardData])
+        setShowModal(false)
+    }
+
     return(
         <div>
             <h1 className="mt-10 text-3xl text-blue-300 pl-8">Home Page</h1>
+
+            <button onClick={()=> setShowModal(true)}>
+                Create New Post
+            </button>
+
+            {showModal &&(
+                <PostModal 
+                onClose={()=>setShowModal(false)}
+                onSubmit={handleAddPost}/>
+            )}
             
            <div className="bg-gray-200 min-h-screen">
             <div className="grid grid-cols-4 gap 5 space-y-5 p-8">
