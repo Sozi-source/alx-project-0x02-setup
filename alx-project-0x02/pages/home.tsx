@@ -70,11 +70,13 @@ const Home: React.FC =()=>{
     }
 
     return(
-        <div>
+        <div className="">
             <h1 className="mt-10 text-3xl text-blue-300 pl-8">Home Page</h1>
-
-            <button onClick={()=> setShowModal(true)}>
-                Create New Post
+        
+        <div className="flex">
+            <div className="w-1/4">
+                <button onClick={()=> setShowModal(true)} className="p-2 rounded-sm ml-9 mt-10 text-xl border border-solid-gray-200 mb-5">
+                New Post
             </button>
 
             {showModal &&(
@@ -82,9 +84,10 @@ const Home: React.FC =()=>{
                 onClose={()=>setShowModal(false)}
                 onSubmit={handleAddPost}/>
             )}
+            </div>
             
-           <div className="bg-gray-200 min-h-screen">
-            <div className="grid grid-cols-4 gap 5 space-y-5 p-8">
+           <div className=" w-3/4 bg-gray-200 min-h-screen">
+            <div className="grid grid-cols-3 gap 3 space-y-3 p-8">
                 {cardData.map((cd, index)=>(
                 <div key={index} >
                     <Card title= {cd.title} 
@@ -95,6 +98,8 @@ const Home: React.FC =()=>{
                ))} 
            </div>
            </div>
+        </div>
+            
 
             
         </div>
