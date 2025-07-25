@@ -1,6 +1,7 @@
-import { ButtonProps } from "@/interfaces";
+import { type ButtonProps } from "@/interfaces";
 
-const Button: React.FC<ButtonProps> =({size, shape, children, ...props })=>{
+const Button: React.FC<ButtonProps> =({size, shape, children, className, ...props })=>{
+    
 
     return(
         <div>

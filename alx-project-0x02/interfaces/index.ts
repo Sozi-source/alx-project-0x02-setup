@@ -14,6 +14,6 @@ export interface PostModalProps{
 }
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
-    size: "small"| "medium"| "large";
-    shape: "rounded-sm" | "rounded-md" | "rounded-full"
+    size?: "small"| "medium"| "large";
+    shape?: "rounded-sm" | "rounded-md" | "rounded-full";
 }
