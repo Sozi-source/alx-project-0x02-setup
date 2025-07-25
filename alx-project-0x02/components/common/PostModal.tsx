@@ -38,7 +38,7 @@ const PostModal: React.FC<PostModalProps> =({onClose, onSubmit})=>{
         <div>
              
             <div> 
-                <form onSubmit={handleSubmit} className="pl-8">
+                <form onSubmit={handleSubmit} className="pl-8 border border-green-400 w-2/3 ml-8 p-3" >
                     <input type="text" 
                     name="title" 
                     value={formData.title} 
