@@ -6,12 +6,12 @@ const About: React.FC =()=>{
         <div>
             <h1>About Page</h1>
 
-            <div className="flex items-center gap-5 p-5">
-                <Button size ="small" shape = "rounded-sm"className="bg-blue-300 text-white border border-solid-gray-500">Small Button</Button>
+            <div className="flex items-center gap-5 p-5 mt-8">
+                <Button size ="small" shape = "rounded-sm"className="">Small Button</Button>
 
-                <Button size ="medium" shape = "rounded-md"className="bg-blue-300 text-white border border-solid-gray-500">Medium Button</Button>
+                <Button size ="medium" shape = "rounded-md"className="">Medium Button</Button>
 
-                <Button size ="large" shape = "rounded-full"className="bg-blue-300 text-white border border-solid-gray-500"> Large Button</Button>
+                <Button size ="large" shape = "rounded-full"className=""> Large Button</Button>
             </div>
         </div>
     )

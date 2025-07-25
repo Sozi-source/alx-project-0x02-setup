@@ -71,7 +71,7 @@ const Home: React.FC =()=>{
 
     return(
         <div className="">
-            <h1 className="mt-10 text-3xl text-blue-300 pl-8">Home Page</h1>
+            <h1 className="mt-16 text-3xl text-blue-300 pl-8">Home Page</h1>
         
         <div className="flex">
             <div className="w-1/4">
