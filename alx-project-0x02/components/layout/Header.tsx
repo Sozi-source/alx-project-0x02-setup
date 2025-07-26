@@ -10,6 +10,8 @@ const Header: React.FC =()=>{
             <Link href= '/home' className="p-3">Home</Link>
             <Link href= '/about' className="p-3" >About</Link>
             <Link href= '/posts' className="p-3" >Posts</Link>
+            <Link href= '/users' className="p-3" >Users</Link>
+
         </div>
         </header>
     )

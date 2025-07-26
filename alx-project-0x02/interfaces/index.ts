@@ -30,3 +30,7 @@ export interface PostProps{
     body: string,
     userId: number
 }
+
+export interface UserProps{
+    
+} 
