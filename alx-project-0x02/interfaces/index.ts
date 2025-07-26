@@ -28,6 +28,5 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 export interface PostProps{
     title: string,
     body: string,
-    id: number,
     userId: number
 }
