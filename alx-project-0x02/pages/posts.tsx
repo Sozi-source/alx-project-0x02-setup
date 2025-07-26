@@ -12,6 +12,8 @@ const Posts: React.FC<postPageProps>=({posts})=>{
     return(
         
        <div>
+        <Header />
+        
         <h2 className="text-2xl text-blue-600 mt-15 ml-8">My Posts</h2>
          <div className="grid grid-cols-3 gap-3 space-y-5 mt-5 ml-8">
             {posts.map((post, index)=>(
