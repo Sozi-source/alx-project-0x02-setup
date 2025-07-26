@@ -1,11 +1,17 @@
 import { type ButtonProps } from "@/interfaces";
 
-const Button: React.FC<ButtonProps> =({size, shape, children, className, ...props })=>{
-    
+const Button: React.FC<ButtonProps> =({size="medium", shape ="rounded-md", children})=>{
+
+const sizeMap = {
+    small: 'py-1 px-2 text-sm',
+    medium: 'py-2 px-4 text-md',
+    large: 'py-3 px-6 text-lg'
+}
+
 
     return(
         <div>
-            <button>{children || "Click Me"} </button>
+            <button className={`bg-blue-400 text-white ${shape} ${sizeMap[size]} `}>{children || "Click Me"} </button>
         </div>
 
     )
