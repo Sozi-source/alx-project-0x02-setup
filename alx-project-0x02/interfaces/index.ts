@@ -24,3 +24,10 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
     onClick?: ()=> void;
     children?: ReactNode;
 }
+
+export interface PostProps{
+    title: string,
+    body: string,
+    id: number,
+    userId: number
+}
