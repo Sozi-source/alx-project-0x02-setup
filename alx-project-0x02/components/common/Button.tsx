@@ -1,6 +1,6 @@
 import { type ButtonProps } from "@/interfaces";
 
-const Button: React.FC<ButtonProps> =({size="medium", shape ="rounded-md", children})=>{
+const Button: React.FC<ButtonProps> =({size="medium", shape ="rounded-md", children, label})=>{
 
 const sizeMap = {
     small: 'py-1 px-2 text-sm',
@@ -11,7 +11,7 @@ const sizeMap = {
 
     return(
         <div>
-            <button className={`bg-blue-400 text-white ${shape} ${sizeMap[size]} `}>{children || "Click Me"} </button>
+            <button className={`bg-blue-400 text-white ${shape} ${sizeMap[size]} `}>{children || label || "Click Me"} </button>
         </div>
 
     )

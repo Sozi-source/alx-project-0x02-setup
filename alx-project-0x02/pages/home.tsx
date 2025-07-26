@@ -2,6 +2,7 @@ import React, {useState } from "react";
 import Card from "@/components/common/Card";
 import PostModal from "@/components/common/PostModal";
 import { formInput } from "@/interfaces";
+import Header from "@/components/layout/Header";
 
 
 
@@ -71,6 +72,8 @@ const Home: React.FC =()=>{
 
     return(
         <div className="">
+
+          <Header />
             <h1 className="mt-16 text-3xl text-blue-300 pl-8">Home Page</h1>
         
         <div className="flex">
